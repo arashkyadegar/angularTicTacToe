@@ -1,0 +1,52 @@
+
+<div class="ml-40  w-6/12 border-2 border-gray-400">
+  <div class=" h-80 relative grid  grid-cols-3 grid-rows-3  gap-2 p-2 text-4xl" >
+
+    <div [ngStyle]="{'background-color': GameMatris[0][2].bgColor ==='red' ? 'red' :'white' }"
+     class=" flex border border-gray-400 p-4 items-center justify-center" (click)="this.move(this.socketId,0,2)">
+     {{GameMatris[0][2].value}}
+    </div>
+
+    <div [ngStyle]="{'background-color': GameMatris[0][1].bgColor ==='red' ? 'red' :'white' }"
+     class="flex border border-gray-400 p-4 items-center justify-center" (click)="this.move(this.socketId,0,1)">
+      {{GameMatris[0][1].value}}
+    </div>
+
+    <div [ngStyle]="{'background-color': GameMatris[0][0].bgColor ==='red' ? 'red' :'white' }"
+     class="flex border border-gray-400 p-4 items-center justify-center" (click)="this.move(this.socketId,0,0)">
+      {{GameMatris[0][0].value}}
+    </div>
+
+    <div [ngStyle]="{'background-color': GameMatris[1][2].bgColor ==='red' ? 'red' :'white' }"
+    class="flex border border-gray-400 p-4 items-center justify-center" (click)="this.move(this.socketId,1,2)">
+      {{GameMatris[1][2].value}}
+    </div>
+
+    <div [ngStyle]="{'background-color': GameMatris[1][1].bgColor ==='red' ? 'red' :'white' }"
+    class="flex border border-gray-400 p-4 items-center justify-center" (click)="this.move(this.socketId,1,1)">
+      {{GameMatris[1][1].value}}
+    </div>
+
+    <div [ngStyle]="{'background-color': GameMatris[1][0].bgColor ==='red' ? 'red' :'white' }"
+    class="flex border border-gray-400 p-4 items-center justify-center" (click)="this.move(this.socketId,1,0)">
+     
+      {{GameMatris[1][0].value}}
+    </div>
+
+    <div [ngStyle]="{'background-color': GameMatris[2][2].bgColor ==='red' ? 'red' :'white' }"
+    class="flex border border-gray-400 p-4 items-center justify-center" (click)="this.move(this.socketId,2,2)">
+      {{GameMatris[2][2].value}}
+    </div>
+
+    <div [ngStyle]="{'background-color': GameMatris[2][1].bgColor ==='red' ? 'red' :'white' }"
+    class="flex border border-gray-400 p-4 items-center justify-center" (click)="this.move(this.socketId,2,1)">
+      {{GameMatris[2][1].value}}
+    </div>
+
+    <div [ngStyle]="{'background-color': GameMatris[2][0].bgColor ==='red' ? 'red' :'white' }"
+    class="flex border border-gray-400 p-4 items-center justify-center" (click)="this.move(this.socketId,2,0)">
+      {{GameMatris[2][0].value}}
+    </div> 
+  </div>
+</div>
+
